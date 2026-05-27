@@ -2,15 +2,11 @@
 provider aws{
     region= "ap-south-1"
 }
-# locals{
-#     ec2_key_name = var.env =="dev" ? "terra-automate-key-prime" : "terra-automate-key-prod"
-# }
 
 # key-value pair
 resource aws_key_pair ec2{
     key_name= "$(var.env)-demo-iac-key"
     public_key = file("demo-iac-key.pub")
-    # public_key= "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHZlsp3QDrf55uMJLRIxmGh3Vo0Avyl72NNIRiYAMIkY priyanshu_vishwakarma@Priyanshu-vishw"
 }
 
 

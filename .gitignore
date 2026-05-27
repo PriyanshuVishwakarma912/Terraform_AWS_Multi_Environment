@@ -1,0 +1,38 @@
+demo-iac-key
+demo-iac-key.pub
+.terraform/
+.terraform.local.hcl
+.tfstate
+.tfstate.*
+crash.log
+crash.*.log
+.tfvars
+.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.pem
+
+# Local .terraform directory
+.terraform/
+.terraform.lock.hcl
+
+# State files and folders 
+*.tfstate
+*.tfstate.*
+terraform.tfstate.d/
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variables files
+*.tfvars
+*.tfvars.json
+
+# SSH Keys
+*.pem
+*.id_rsa
+id_rsa
+id_rsa.pub
